@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Hayamichi';
+    src: url('/assets/fonts/Hayamichi.ttf') format('truetype');
+}
+
+
+.zengarden-container {
+    background-image: url("/assets/zengarden-bg.jpg");
+    background-position: center;
+}
+
+.zengarden-menu-screen {
+    background-image: linear-gradient(rgba(116, 91, 68, 0.67), rgba(116, 91, 68, 0.67)), url('/assets/zengarden-bg.jpg');
+    background-position: center;
+}
+
+.zengarden-menu,
+.zengarden-play-button,
+.zengarden-pause-button {
+    background-color: #745B44;
+    font-family: 'Hayamichi', sans-serif;
+    color: #232016;
+    letter-spacing: 0.15em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.zengarden-menu:hover,
+.zengarden-play-button:hover,
+.zengarden-pause-button:hover {
+    background-color: #D6C7A9;
+}
+
+/* Individual sound container styles */
+.zengarden-sound {
+    font-family: 'Hayamichi', sans-serif;
+    background-color: #768B41;
+}
+
+/* Heading styles */
+.zengarden-h1 {
+    font-family: 'Hayamichi', sans-serif;
+    color: #232016;
+    letter-spacing: 3px;
+}
+
+/* Custom styling for range input slider */
+.zengarden-input[type="range"] {
+    background-color: #D6C7A9;
+}
+
+/* Set the thumb appearance for WebKit-based browsers */
+.zengarden-input[type="range"]::-webkit-slider-thumb {
+    background: #365E14;
+}
+
+/* Set the thumb appearance for Mozilla Firefox */
+.zengarden-input[type="range"]::-moz-range-thumb {
+    background: #365E14;
+}

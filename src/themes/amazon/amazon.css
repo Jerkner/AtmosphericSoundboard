@@ -1,0 +1,60 @@
+/* Rain component styles */
+.amazon-react-rain {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 115%;
+    pointer-events: none;
+}
+
+.amazon-container {
+    background-image: url("/assets/amazon-bg.jpg");
+}
+
+.amazon-menu-screen {
+    background-image: linear-gradient(rgba(85, 111, 45, 0.67), rgba(85, 111, 45, 0.67)), url('/assets/amazon-bg.jpg');
+}
+
+.amazon-menu,
+.amazon-play-button,
+.amazon-pause-button {
+    background-color: #556F2D;
+    font-family: 'IM Fell English', serif;
+    color: #1A2D13;
+    padding-bottom: 10px;
+}
+
+.amazon-menu:hover,
+.amazon-play-button:hover,
+.amazon-pause-button:hover {
+    background-color: #5D7A52;
+}
+
+/* Individual sound container styles */
+.amazon-sound {
+    background-color: #889F87;
+    font-family: 'IM Fell English', serif;
+}
+
+/* Heading styles */
+.amazon-h1 {
+    font-family: 'IM Fell English', serif;
+    color: #2F4516;
+}
+
+/* Custom styling for range input slider */
+.amazon-input[type="range"] {
+    background-color: #A0B4AC;
+}
+
+/* Set the thumb appearance for WebKit-based browsers */
+.amazon-input[type="range"]::-webkit-slider-thumb {
+    background: #556F2D;
+}
+
+/* Set the thumb appearance for Mozilla Firefox */
+.amazon-input[type="range"]::-moz-range-thumb {
+    background: #556F2D;
+}

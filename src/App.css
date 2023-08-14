@@ -1,0 +1,208 @@
+/* Apply CSS reset to all elements */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* App container styles */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.menu {
+    border: none;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    font-size: 2.33em;
+}
+
+.hamburger {
+    margin-top: 4px;
+}
+
+.cross {
+    margin-top: 4px;
+    width: 25px;
+}
+
+.menu-screen {
+    z-index: 2;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.menu-items-container {
+    padding-top: 47.2px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.menu-tn {
+    width: 25vh;
+    height: 18vh;
+    margin: 2vh;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+/* Button and input styles */
+button,
+input {
+    cursor: pointer;
+}
+
+/* Play and Pause button styles */
+.play-button,
+.pause-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    font-size: 2.33em;
+    transform: translate(-50%, -50%);
+}
+
+.group-container {
+    margin-top: 47.2px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Group container styles */
+.group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.sound {
+    width: min-content;
+    height: min-content;
+    margin: 4vh;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 37px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* Custom styling for range input slider */
+input[type="range"] {
+    margin: 0 20px;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Set the thumb appearance for WebKit-based browsers */
+input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Set the thumb appearance for Mozilla Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+
+.app-container {
+    justify-content: space-around;
+}
+
+.menu {
+    border: none;
+    gap: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px;
+    top: 0%;
+    left: unset;
+    right: 0;
+    width: min-content;
+}
+
+.menu-items-container {
+    gap: 25vh;
+}
+
+.menu-group {
+    gap: 25vw;
+    flex-direction: row;
+}
+
+.play-button,
+.pause-button {
+    width: 4em;
+    padding: 10px 50px;
+    border-radius: 37px;
+    font-size: 4em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.group {
+    gap: 25vw;
+    flex-direction: row;
+}
+
+.menu-tn {
+    width: 30vh;
+    height: 22vh;
+}
+}

@@ -1,0 +1,53 @@
+.harbor-container {
+    background-image: url("/assets/harbor-bg.jpg");
+    background-position: bottom;
+}
+
+.harbor-menu-screen {
+    background-image: linear-gradient(rgba(124, 119, 113, 0.67), rgba(124, 119, 113, 0.67)), url('/assets/harbor-bg.jpg');
+    background-position: bottom;
+}
+
+.harbor-menu,
+.harbor-play-button,
+.harbor-pause-button {
+    background-color: #7C7771;
+    font-family: 'IM Fell English', serif;
+    color: #07070F;
+    letter-spacing: 1.25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.harbor-menu:hover,
+.harbor-play-button:hover,
+.harbor-pause-button:hover {
+    background-color: #A8A9A7;
+}
+
+/* Individual sound container styles */
+.harbor-sound {
+    font-family: 'IM Fell English', serif;
+    background-color: #576775;
+}
+
+/* Heading styles */
+.harbor-h1 {
+    font-family: 'IM Fell English', serif;
+    color: #07070F;
+}
+
+/* Custom styling for range input slider */
+.harbor-input[type="range"] {
+    background-color: #CDD8E2;
+}
+
+/* Set the thumb appearance for WebKit-based browsers */
+.harbor-input[type="range"]::-webkit-slider-thumb {
+    background: #07070F;
+}
+
+/* Set the thumb appearance for Mozilla Firefox */
+.harbor-input[type="range"]::-moz-range-thumb {
+    background: #07070F;
+}
